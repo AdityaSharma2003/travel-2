@@ -10,7 +10,7 @@ import "../css/aboutus.css";
 
 
 import Footer from "@/components-root/Footer";
-import Header from "@/components-root/Header";
+import Navbar from "@/components-root/Navbar";
 import BackToTop from "@/components-root/BackToTop";
 import dynamic from "next/dynamic";
 
@@ -43,7 +43,7 @@ export default async function RootLayout({ children }) {
       <UserProvider>
         <body className={playfair_display.variable} suppressHydrationWarning={true}>
           <ThemeProvider attribute="class">
-            <Header />
+            <Navbar />
             {children}
             <Footer />
             <BackToTop />

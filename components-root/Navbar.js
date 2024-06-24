@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useUser } from '@auth0/nextjs-auth0/client';
 import {useTheme} from 'next-themes';
 
-const Header = () => {
+const Navbar = () => {
     const [darkMode, setDarkMode] = useState(false);
     const [menuVisible, setMenuVisible] = useState(false);
     const [profileVisible, setProfileVisible] = useState(false);
@@ -60,10 +60,7 @@ const Header = () => {
         setProfileVisible(!profileVisible);
     };
 
-    const { user, error, isLoading } = useUser();
-
-    if (isLoading) return <div>Loading...</div>;
-    if (error) return <div>{error.message}</div>;
+    const { user } = useUser();
 
 
     return (
@@ -232,4 +229,4 @@ const Header = () => {
     );
 }
 
-export default Header;
+export default Navbar;
