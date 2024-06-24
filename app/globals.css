@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Base styles for the navbar */
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.nav--menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav--list {
+    display: flex;
+    list-style: none;
+}
+
+.nav--item {
+    margin: 0 1rem;
+}
+
+.nav--link {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav--dark {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.change-theme-name {
+    margin-right: 0.5rem;
+}
+
+.nav--toggle {
+    display: none;
+    cursor: pointer;
+}
+.nav--logo {
+    padding-right: 100px; 
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav--menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .nav--menu.show {
+        display: flex;
+    }
+
+    .nav--list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav--item {
+        margin: 0.5rem 0;
+        width: 100%;
+    }
+
+    .nav--link {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        color: #000;
+        text-align: left;
+    }
+
+    .nav--toggle {
+        display: block;
+    }
+}
+
+
+
+
+.playfair_display{
+    font-family: var(--font-playfair_display);
+}
