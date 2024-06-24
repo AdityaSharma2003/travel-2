@@ -66,7 +66,7 @@ export default function FAQ() {
         <div className="mt-12  py-8 px-7 rounded-2xl flex flex-col gap-5 text-center items-center justify-center dark:bg-gray-800">
           <span className="text-2xl text-white dark:text-gray-200">Still have questions?</span>
           <p className="text-gray-200">
-            Can’t find the answer you’re looking for? Please chat to our friendly team.
+            Can&apos;t find the answer you&apos;re looking for? Please chat to our friendly team.
           </p>
           <button className="py-3 px-7 w-fit border border-solid border-gray-300 rounded-lg bg-white text-gray-700 hover:bg-gray-300 active:bg-gray-200 transition dark:bg-gray-200 dark:text-gray-800">
             <a href="contact" >Get in touch</a>

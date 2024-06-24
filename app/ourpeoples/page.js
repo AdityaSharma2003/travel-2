@@ -7,7 +7,7 @@ export default function Home() {
         <div className="flex justify-center text-center mb-16 mt-20">
           <div className="w-full lg:w-2/3">
             <h3 className="text-lg text-white mb-4">Our Experts</h3>
-            <h2 className="text-4xl font-bold text-white">Let's meet with our team members</h2>
+            <h2 className="text-4xl font-bold text-white">Let&apos;s meet with our team members</h2>
           </div>
         </div>
         <div className="flex flex-wrap justify-center">
