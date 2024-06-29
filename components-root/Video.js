@@ -118,6 +118,7 @@
 
 
 
+
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -175,11 +176,12 @@ const Video = () => {
                 <div className="video--content">
                     <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
                         <iframe
-                            src="https://player.vimeo.com/video/966963247?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            src="https://player.vimeo.com/video/966963247?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;dnt=1"
                             frameBorder="0"
                             allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
                             style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-                            title="yourtouragent virtual tour">
+                            title="yourtouragent virtual tour"
+                        >
                         </iframe>
                     </div>
 
